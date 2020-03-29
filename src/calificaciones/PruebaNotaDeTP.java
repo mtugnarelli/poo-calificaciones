@@ -34,4 +34,14 @@ public class PruebaNotaDeTP {
 		
 		Assert.assertEquals("Coders", notaGrupal.obtenerGrupo());
 	}
+	
+	@Test
+	public void apruebaCon8() {
+		
+		NotaDeTP notaDeTP = new NotaDeTP();
+		
+		notaDeTP.asignar(8);
+		
+		Assert.assertTrue(notaDeTP.aprueba());
+	}
 }
