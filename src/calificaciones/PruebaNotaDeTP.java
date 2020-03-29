@@ -24,4 +24,14 @@ public class PruebaNotaDeTP {
 		
 		Assert.assertEquals(8, notaDeTP.obtenerValor());
 	}
+	
+	@Test
+	public void apruebaCon8() {
+		
+		NotaDeTP notaDeTP = new NotaDeTP();
+		
+		notaDeTP.asignar(8);
+		
+		Assert.assertTrue(notaDeTP.aprueba());
+	}
 }
