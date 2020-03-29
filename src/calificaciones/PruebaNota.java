@@ -14,6 +14,14 @@ public class PruebaNota {
 	}
 	
 	@Test
+	public void crearLaNotaConValorInicial7() {
+		
+		Nota unaNotaMuyBuena = new Nota(7);
+		
+		Assert.assertEquals(7, unaNotaMuyBuena.obtenerValor());
+	}
+	
+	@Test
 	public void asignarElValorPor10() {
 		
 		Nota notaExcelente = new Nota();

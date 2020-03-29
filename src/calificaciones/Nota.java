@@ -4,6 +4,14 @@ public class Nota {
 
 	private int valor = 0;
 	
+	public Nota() {
+	}
+	
+	public Nota(int valorInicial) {
+
+		asignar(valorInicial);
+	}
+	
 	public int obtenerValor() {
 		
 		return valor;
