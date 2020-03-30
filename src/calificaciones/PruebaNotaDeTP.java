@@ -16,6 +16,23 @@ public class PruebaNotaDeTP {
 	}
 	
 	@Test
+	public void creaLaNotaDeTPConValorInicial6() {
+		
+		NotaDeTP notaDeTP = new NotaDeTP(6);
+		
+		Assert.assertEquals(6, notaDeTP.obtenerValor());
+	}
+	
+	@Test
+	public void creaLaNotaDeTPConValorInicial5ParaElGrupoAlgo2() {
+		
+		NotaDeTP notaDeTP = new NotaDeTP(5, "Algo2");
+		
+		Assert.assertEquals(5, notaDeTP.obtenerValor());
+		Assert.assertEquals("Algo2", notaDeTP.obtenerGrupo());
+	}
+	
+	@Test
 	public void asignarValor8() {
 		
 		NotaDeTP notaDeTP = new NotaDeTP();
